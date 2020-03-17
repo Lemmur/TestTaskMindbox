@@ -1,4 +1,4 @@
-.invites--form {
+.invites__form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,7 +9,8 @@
   justify-content: space-between;
 }
 
-.invites input {
+/* (Review) Не хорошо использовать теги в стилях, может породить проблемы, лучше классы */
+.invites__form-input {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
@@ -21,7 +22,7 @@
   border: 1px solid #ccc;
 }
 
-.invites button {
+.invites__form-submit {
   display: inline-block;
   height: 26px;
   border: 1px solid #ccc;
@@ -29,17 +30,17 @@
   -moz-appearance: none;
 }
 
-.invites--delimiter {
+.invites__delimiter {
   background-color: #ccc;
   height: 1px;
   margin: 5px 0;
 }
 
-.invites ul {
+.invites__items {
   margin: 0;
   padding: 0;
 }
 
-.invites ul li {
+.invites__item {
   list-style: none;
 }

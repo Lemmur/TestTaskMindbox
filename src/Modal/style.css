@@ -11,7 +11,7 @@
   transition: background-color 300ms, transform 300ms, -webkit-transform 300ms;
 }
 
-.modal_enter {
+.modal__enter {
   top: 0;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transform: scale(1.2);
@@ -19,7 +19,7 @@
   transform: scale(1.2);
 }
 
-.modal_enter-active {
+.modal__enter-active {
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transform: scale(1);
@@ -27,7 +27,7 @@
   transform: scale(1);
 }
 
-.modal_enter-done {
+.modal__enter-done {
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transform: scale(1);
@@ -35,7 +35,7 @@
   transform: scale(1);
 }
 
-.modal_exit {
+.modal__exit {
   top: 0;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transform: scale(1);
@@ -43,7 +43,7 @@
   transform: scale(1);
 }
 
-.modal_exit-active {
+.modal__exit-active {
   top: 0;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transform: scale(1.2);
@@ -51,7 +51,7 @@
   transform: scale(1.2);
 }
 
-.modal_exit-done {
+.modal__exit-done {
   top: -webkit-calc(-120vh * 1.2);
   top: calc(-120vh * 1.2);
   background-color: rgba(0, 0, 0, 0);
@@ -60,7 +60,7 @@
   transform: scale(1.2);
 }
 
-.modal--content {
+.modal__content {
   position: relative;
   margin: 25vh 25vw;
   padding: 20px;
@@ -70,7 +70,7 @@
   border-radius: 5px;
 }
 
-.close {
+.modal__close {
   position: absolute;
   top: -25px;
   right: -25px;

@@ -1,13 +1,9 @@
 import React, { FC, useState, useCallback, useEffect } from "react";
+import { InvitesComponentProps } from "./invites.interface";
 
 import "./style.css";
 
-interface Props {
-  invites: string[];
-  onAdd: (name: string) => void;
-}
-
-export const Invites: FC<Props> = ({ invites, onAdd }) => {
+export const Invites: FC<InvitesComponentProps> = ({ invites, onAdd }) => {
   const [name, setName] = useState("");
   const handleChangeName = useCallback(
     (event: any) => {
@@ -26,21 +22,21 @@ export const Invites: FC<Props> = ({ invites, onAdd }) => {
 
   return (
     <div className="invites">
-      <div className="invites--form">
+      <div className="invites__form">
         <input
-          className="invites--form-input"
+          className="invites__form-input"
           onChange={handleChangeName}
           type="text"
           value={name}
         />
-        <button className="invites--form-submit" onClick={handleSubmit}>
+        <button className="invites__form-submit" onClick={handleSubmit}>
           Invite
         </button>
       </div>
-      <div className="invites--delimiter" />
-      <ul className="invites--items">
+      <div className="invites__delimiter" />
+      <ul className="invites__items">
         {invites.map(name => (
-          <li className="invites--item">{name}</li>
+          <li className="invites__item">{name}</li>
         ))}
       </ul>
     </div>

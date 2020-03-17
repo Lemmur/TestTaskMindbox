@@ -2,8 +2,9 @@ import React from "react";
 import { render } from "react-dom";
 import { init as suppress } from "log-suppress";
 
+import { Root } from "./root.component";
+
 import "./index.css";
-import { Root } from "./Root";
 
 suppress(console);
 

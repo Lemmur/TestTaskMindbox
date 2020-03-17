@@ -1,1 +1,1 @@
-export { Invites } from "./Invites";
+export { Invites } from "./invites.component";
