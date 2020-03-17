@@ -1,2 +1,0 @@
-# TestTaskMindbox
-Created with CodeSandbox
